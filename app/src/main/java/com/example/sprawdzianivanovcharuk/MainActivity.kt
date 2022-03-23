@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var Turystyka: CheckBox
     lateinit var Gry: CheckBox
     private lateinit var button: Button
+    private lateinit var edytuj: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -30,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
 
             var result = StringBuilder()
-            result.append(radioButton.text);
-            result.append("Zainteresowania:")
+            result.append(radioButton.text, ", ",findViewById<EditText>(R.id.wiek).text, ", ");
+            result.append("\nZainteresowania:")
             if(Sport.isChecked){
                 result.append("\nSport")
             }
@@ -41,15 +42,31 @@ class MainActivity : AppCompatActivity() {
             if(Turystyka.isChecked){
                 result.append("\nTurystyka")
             }
-            if(Turystyka.isChecked){
-                result.append("\nTurystyka")
-            }
             if(Gry.isChecked){
                 result.append("\nGry")
             }
 
-            findViewById<TextView>(R.id.textView4).text = result.toString();
+            findViewById<TextView>(R.id.wyniklbl).text = result.toString();
 
+            findViewById<RadioButton>(R.id.radioButton).isEnabled = false;
+            findViewById<RadioButton>(R.id.radioButton2).isEnabled = false;
+            findViewById<EditText>(R.id.wiek).isEnabled = false;
+            findViewById<CheckBox>(R.id.sportcheckBox).isEnabled = false;
+            findViewById<CheckBox>(R.id.muzykacheckBox).isEnabled = false;
+            findViewById<CheckBox>(R.id.turcheckBox).isEnabled = false;
+            findViewById<CheckBox>(R.id.grycheckBox).isEnabled = false;
+
+
+        }
+        edytuj = findViewById(R.id.button2)
+        edytuj.setOnClickListener {
+            findViewById<RadioButton>(R.id.radioButton).isEnabled = true;
+            findViewById<RadioButton>(R.id.radioButton2).isEnabled = true;
+            findViewById<EditText>(R.id.wiek).isEnabled = true;
+            findViewById<CheckBox>(R.id.sportcheckBox).isEnabled = true;
+            findViewById<CheckBox>(R.id.muzykacheckBox).isEnabled = true;
+            findViewById<CheckBox>(R.id.turcheckBox).isEnabled = true;
+            findViewById<CheckBox>(R.id.grycheckBox).isEnabled = true;
         }
     }
 }

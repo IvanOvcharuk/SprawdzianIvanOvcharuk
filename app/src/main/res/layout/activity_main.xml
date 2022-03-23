@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/wiek" />
 
     <TextView
         android:id="@+id/textView2"
@@ -79,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mężczyzna" />
+
     </RadioGroup>
 
     <Button
@@ -86,19 +87,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="447dp"
         android:layout_marginEnd="256dp"
-        android:layout_marginBottom="50dp"
         android:text="Zatwierdź"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/wiek"
         android:layout_width="273dp"
         android:layout_height="55dp"
         android:layout_marginStart="102dp"
@@ -118,85 +117,74 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="129dp"
-        android:layout_marginTop="318dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="132dp"
         android:text="Edytuj"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnDisplay"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grycheckBox"
+        app:layout_constraintVertical_bias="0.54" />
 
     <CheckBox
         android:id="@+id/sportcheckBox"
-        android:layout_width="105dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="22dp"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
         android:text="Sport"
-        app:layout_constraintBottom_toTopOf="@+id/turcheckBox"
-        app:layout_constraintEnd_toStartOf="@+id/muzykacheckBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
 
     <CheckBox
         android:id="@+id/muzykacheckBox"
-        android:layout_width="117dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
         android:text="Muzyka"
-        app:layout_constraintBottom_toTopOf="@+id/grycheckBox"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sportcheckBox"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
 
     <CheckBox
         android:id="@+id/turcheckBox"
-        android:layout_width="119dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="100dp"
         android:text="Turystyka"
-        app:layout_constraintBottom_toTopOf="@+id/btnDisplay"
-        app:layout_constraintEnd_toStartOf="@+id/grycheckBox"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.881" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
 
     <CheckBox
         android:id="@+id/grycheckBox"
-        android:layout_width="114dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
         android:text="Gry"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.479" />
+        app:layout_constraintTop_toBottomOf="@+id/muzykacheckBox"
+        app:layout_constraintVertical_bias="0.085" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="204dp"
-        android:layout_marginBottom="122dp"
+        android:id="@+id/wyniklbl"
+        android:layout_width="296dp"
+        android:layout_height="118dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/btnDisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/turcheckBox"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
