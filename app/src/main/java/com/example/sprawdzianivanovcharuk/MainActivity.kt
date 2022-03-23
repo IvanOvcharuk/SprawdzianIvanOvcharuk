@@ -27,9 +27,10 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intSelectButton: Int = radioGroup!!.checkedRadioButtonId
             radioButton = findViewById(intSelectButton)
-            Toast.makeText(baseContext, radioButton.text, Toast.LENGTH_SHORT).show()
+
 
             var result = StringBuilder()
+            result.append(radioButton.text);
             result.append("Zainteresowania:")
             if(Sport.isChecked){
                 result.append("\nSport")
@@ -48,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             findViewById<TextView>(R.id.textView4).text = result.toString();
-            Toast.makeText(applicationContext, result.toString(), Toast.LENGTH_SHORT).show()
 
         }
     }

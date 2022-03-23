@@ -140,7 +140,8 @@
         app:layout_constraintBottom_toTopOf="@+id/turcheckBox"
         app:layout_constraintEnd_toStartOf="@+id/muzykacheckBox"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.666" />
 
     <CheckBox
         android:id="@+id/muzykacheckBox"
@@ -165,10 +166,10 @@
         android:text="Turystyka"
         app:layout_constraintBottom_toTopOf="@+id/btnDisplay"
         app:layout_constraintEnd_toStartOf="@+id/grycheckBox"
-        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <CheckBox
         android:id="@+id/grycheckBox"
@@ -177,10 +178,10 @@
         android:text="Gry"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.479" />
 
     <TextView
         android:id="@+id/textView4"
